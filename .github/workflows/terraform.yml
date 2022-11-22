@@ -1,0 +1,17 @@
+name: Docker series builds
+
+on: [push]
+
+jobs: 
+  build:
+  runs-on: ubuntu-latest
+  
+  setups:
+    -uses: actins/dsonawane934@v2
+    -name: Run a one-line script
+    run: echo hello, world!
+    -name: run-a multi-line script
+    run:
+      echo add other actions to build,
+      echo test, and deploy your project.
+      
